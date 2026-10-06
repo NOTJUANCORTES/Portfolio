@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Juan Cortes</title>
+
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script src="script.js?v=3" defer></script>
+</head>
+
+<body>
+  <!-- Animated background -->
+  <canvas id="wave-background"></canvas>
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a
+        class="nav-brand"
+        href="#projects"
+        aria-label="Juan Cortes home"
+      >
+        JUAN CORTES<span aria-hidden="true">_</span>
+      </a>
+
+      <div class="nav-links">
+        <a
+          href="#projects"
+          data-page="projects"
+          aria-current="page"
+        >
+          Projects
+        </a>
+        <a href="#blog" data-page="blog">Blog</a>
+        <a href="#github" data-page="github">GitHub</a>
+        <a href="#contact" data-page="contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Projects: main page -->
+    <div id="projects" class="page-panel">
+      <section class="hero">
+        <img
+          class="profile-picture"
+          src="assets/portraits/juan.jpg"
+          alt="Portrait of Juan Cortes"
+        >
+
+        <h1>Data Scientist | Applied Statistician</h1>
+
+        <p>
+          I am a UCLA Master of Applied Statistics and Data Science
+          student combining statistical modeling, data science, and
+          software to build useful health and research tools.
+        </p>
+
+        <p>
+          Interested in healthcare analytics, responsible AI,
+          or statistical research? Let’s talk.
+        </p>
+
+        <div class="contact">
+          <a
+            href="https://github.com/NOTJUANCORTES"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github: @NOTJUANCORTES
+          </a>
+
+          <a href="mailto:juancortes.management@gmail.com">
+            email: juancortes.management@gmail.com
+          </a>
+        </div>
+      </section>
+
+      <section class="featured">
+        <p class="section-label">LATEST PROJECT</p>
+
+        <h2>
+          CalFresh Outreach Dashboard
+          <span>· 2025</span>
+        </h2>
+
+        <p>
+          An interactive R Shiny dashboard for monitoring service visits,
+          assistance needs, visit modes, and year-over-year program patterns.
+        </p>
+
+        <a class="read-link" href="#">View project →</a>
+      </section>
+
+      <section class="projects">
+        <article class="project">
+          <div class="project-heading">
+            <h3>Marriage and Afffair Prediction</h3>
+
+            <a
+              href="https://github.com/NOTJUANCORTES/Marriage-and-Affairs/blob/main/final_portfolio/final/Lab_X.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              view →
+            </a>
+          </div>
+
+          <p>
+            egression analysis examining healthcare cost per visit.
+          </p>
+
+          <p class="tools">
+            R Decision Tree Classification · Logistic Regression
+          </p>
+        </article>
+
+        <article class="project">
+          <div class="project-heading">
+            <h3>UFO × Meteorite Analysis</h3>
+            <a href="#">view →</a>
+          </div>
+
+          <p>
+            Count-modeling study of UFO sightings and meteorite activity.
+          </p>
+
+          <p class="tools">R · Negative Binomial · Research</p>
+        </article>
+
+        <article class="project">
+          <div class="project-heading">
+            <h3>Personal Wellness Intelligence</h3>
+            <a href="#">view →</a>
+          </div>
+
+          <p>
+            A health analytics project connecting sleep, nutrition,
+            training, mood, and academic stress.
+          </p>
+
+          <p class="tools">Python · Health Data · AI</p>
+        </article>
+      </section>
+    </div>
+
+    <!-- Blog -->
+    <section
+      id="blog"
+      class="page-panel content-panel"
+      aria-labelledby="blog-title"
+    >
+      <p class="section-label">BLOG</p>
+      <h1 id="blog-title">Notes &amp; ideas</h1>
+      <p>Coming soon. Check back for new posts.</p>
+    </section>
+
+    <!-- GitHub -->
+    <section
+      id="github"
+      class="page-panel content-panel"
+      aria-labelledby="github-title"
+    >
+      <p class="section-label">GITHUB</p>
+      <h1 id="github-title">Explore my code</h1>
+
+      <p>Browse my projects and repositories on GitHub.</p>
+
+      <a
+        class="action-link"
+        href="https://github.com/NOTJUANCORTES"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @NOTJUANCORTES ↗
+      </a>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="page-panel content-panel"
+      aria-labelledby="contact-title"
+    >
+      <p class="section-label">CONTACT</p>
+      <h1 id="contact-title">Let’s talk.</h1>
+
+      <p>
+        Interested in healthcare analytics, responsible AI,
+        or statistical research? Get in touch.
+      </p>
+
+      <a
+        class="action-link"
+        href="mailto:juancortes.management@gmail.com"
+      >
+        juancortes.management@gmail.com →
+      </a>
+    </section>
+  </main>
+</body>
+</html>
