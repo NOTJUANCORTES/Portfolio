@@ -36,6 +36,10 @@ showPage();
 const canvas = document.querySelector("#wave-background");
 const context = canvas.getContext("2d");
 
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+).matches;
+
 let width;
 let height;
 let pixelRatio;
@@ -151,8 +155,13 @@ function drawWave(row, totalRows) {
   context.shadowBlur = 0;
 }
 
+function drawStaticBackground() {
+  context.fillStyle = "#020703";
+  context.fillRect(0, 0, width, height);
+  drawGrid();
+}
+
 function animate() {
-  // Translucent fill creates trails behind the animation.
   context.fillStyle = "rgba(2, 7, 3, 0.2)";
   context.fillRect(0, 0, width, height);
 
@@ -169,11 +178,20 @@ function animate() {
   requestAnimationFrame(animate);
 }
 
-window.addEventListener("resize", resizeCanvas);
+window.addEventListener("resize", () => {
+  resizeCanvas();
+
+  if (prefersReducedMotion) {
+    drawStaticBackground();
+  }
+});
 
 resizeCanvas();
 
-context.fillStyle = "#020703";
-context.fillRect(0, 0, width, height);
-
-animate();
+if (prefersReducedMotion) {
+  drawStaticBackground();
+} else {
+  context.fillStyle = "#020703";
+  context.fillRect(0, 0, width, height);
+  animate();
+}

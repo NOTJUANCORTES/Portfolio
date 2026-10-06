@@ -3,11 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Juan Cortes — UCLA Master of Applied Statistics and Data Science student building health analytics, statistical modeling, and research tools."
+  >
 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Juan Cortes | Data Scientist">
+  <meta
+    property="og:description"
+    content="Portfolio of statistical modeling, data science, and software for health and research."
+  >
+  <meta property="og:url" content="https://notjuancortes.github.io/Portfolio/">
+  <meta
+    property="og:image"
+    content="https://notjuancortes.github.io/Portfolio/assets/portraits/juan.jpg"
+  >
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <title>Juan Cortes</title>
 
-  <link rel="stylesheet" href="styles.css?v=3">
-  <script src="script.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script src="script.js?v=4" defer></script>
 </head>
 
 <body>
@@ -48,6 +65,8 @@
           class="profile-picture"
           src="assets/portraits/juan.jpg"
           alt="Portrait of Juan Cortes"
+          width="180"
+          height="180"
         >
 
         <h1>Data Scientist | Applied Statistician</h1>
@@ -88,19 +107,43 @@
 
         <p>
           An interactive R Shiny dashboard for monitoring service visits,
-          assistance needs, visit modes, and year-over-year program patterns.
+          assistance needs, visit modes, and year-over-year program patterns
+          at Chico State’s CalFresh Outreach office.
         </p>
 
-        <a class="read-link" href="#">View project →</a>
+        <a
+          class="read-link"
+          href="https://juancortes-connect.shinyapps.io/Capstone/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open live dashboard →
+        </a>
+        <a
+          class="read-link read-link-secondary"
+          href="https://github.com/NOTJUANCORTES/Capstone-R-Shiny-Dashboard"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View code on GitHub →
+        </a>
       </section>
 
       <section class="projects">
         <article class="project">
+          <img
+            class="project-thumb"
+            src="assets/project-images/marriage-affairs.svg"
+            alt=""
+            width="400"
+            height="120"
+          >
+
           <div class="project-heading">
-            <h3>Marriage and Afffair Prediction</h3>
+            <h3>Marriage and Affairs Prediction</h3>
 
             <a
-              href="https://github.com/NOTJUANCORTES/Marriage-and-Affairs/blob/main/final_portfolio/final/Lab_X.pdf"
+              href="https://github.com/NOTJUANCORTES/Marriage-and-Affairs"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -109,31 +152,58 @@
           </div>
 
           <p>
-            egression analysis examining healthcare cost per visit.
+            Classification study predicting whether an individual reported an
+            extramarital affair using logistic regression and decision trees
+            on the engineered response <code>had_affair</code>.
           </p>
 
           <p class="tools">
-            R Decision Tree Classification · Logistic Regression
+            R · Decision Tree Classification · Logistic Regression
           </p>
         </article>
 
         <article class="project">
+          <img
+            class="project-thumb"
+            src="assets/project-images/ufo-meteorite.svg"
+            alt=""
+            width="400"
+            height="120"
+          >
+
           <div class="project-heading">
             <h3>UFO × Meteorite Analysis</h3>
-            <a href="#">view →</a>
+
+            <a
+              href="https://github.com/NOTJUANCORTES/Meteorite-Events-and-UFO-Reporting-Activity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              view →
+            </a>
           </div>
 
           <p>
-            Count-modeling study of UFO sightings and meteorite activity.
+            Count-modeling study testing whether documented meteorite events
+            are associated with changes in UFO reporting activity.
           </p>
 
           <p class="tools">R · Negative Binomial · Research</p>
         </article>
 
         <article class="project">
+          <img
+            class="project-thumb"
+            src="assets/project-images/wellness.svg"
+            alt=""
+            width="400"
+            height="120"
+          >
+
           <div class="project-heading">
             <h3>Personal Wellness Intelligence</h3>
-            <a href="#">view →</a>
+
+            <span class="link-soon" aria-disabled="true">Demo coming soon</span>
           </div>
 
           <p>
@@ -167,6 +237,39 @@
       <h1 id="github-title">Explore my code</h1>
 
       <p>Browse my projects and repositories on GitHub.</p>
+
+      <ul class="repo-list">
+        <li>
+          <a
+            href="https://github.com/NOTJUANCORTES/Capstone-R-Shiny-Dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Capstone-R-Shiny-Dashboard
+          </a>
+          <span>CalFresh Outreach sign-in dashboard (R Shiny)</span>
+        </li>
+        <li>
+          <a
+            href="https://github.com/NOTJUANCORTES/Marriage-and-Affairs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Marriage-and-Affairs
+          </a>
+          <span>Affair prediction with logistic regression and decision trees</span>
+        </li>
+        <li>
+          <a
+            href="https://github.com/NOTJUANCORTES/Meteorite-Events-and-UFO-Reporting-Activity"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Meteorite-Events-and-UFO-Reporting-Activity
+          </a>
+          <span>Meteorite events and UFO reporting count models</span>
+        </li>
+      </ul>
 
       <a
         class="action-link"
