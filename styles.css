@@ -345,6 +345,18 @@ a:focus-visible {
   overflow-wrap: anywhere;
 }
 
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contact-actions .action-link {
+  margin-top: 0;
+}
+
 .repo-list {
   margin: 1.5rem 0 0;
   padding: 0;
