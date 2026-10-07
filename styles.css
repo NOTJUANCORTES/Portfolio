@@ -239,149 +239,6 @@ a:focus-visible {
   font-size: 0.9em;
 }
 
-.featured-preview {
-  margin-top: 1.25rem;
-  padding: 1rem;
-  border: 1px solid rgba(57, 255, 20, 0.35);
-  background: rgba(2, 8, 4, 0.85);
-  box-shadow: inset 0 0 20px rgba(57, 255, 20, 0.04);
-}
-
-.featured-preview-label {
-  margin: 0 0 0.75rem;
-  color: var(--cyan);
-  font-size: 0.75rem;
-  font-weight: bold;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.featured-preview-frame {
-  overflow: auto;
-  max-height: min(420px, 55vh);
-  border: 1px solid var(--border);
-  background: #010502;
-}
-
-.featured-preview-iframe {
-  display: block;
-  width: 100%;
-  min-height: 360px;
-  height: min(400px, 50vh);
-  border: 0;
-}
-
-.preview-expand-btn {
-  display: block;
-  width: 100%;
-  margin-top: 0.75rem;
-  padding: 0.65rem 1rem;
-  border: 1px solid #006d60;
-  background: rgba(0, 109, 96, 0.15);
-  color: #00e5c2;
-  font-family: var(--mono);
-  font-size: 0.85rem;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-}
-
-.preview-expand-btn:hover {
-  background: rgba(0, 109, 96, 0.28);
-  color: #00ffb7;
-}
-
-.preview-expand-btn:focus-visible {
-  outline: 2px solid var(--cyan);
-  outline-offset: 4px;
-}
-
-.pdf-preview-dialog {
-  width: min(96vw, 960px);
-  max-width: none;
-  max-height: 92vh;
-  margin: auto;
-  padding: 0;
-  border: 1px solid var(--border);
-  background: var(--panel);
-  color: var(--text);
-  overflow: hidden;
-}
-
-.pdf-preview-dialog::backdrop {
-  background: rgba(2, 7, 3, 0.88);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .pdf-preview-dialog {
-    transition: opacity 0.2s ease, transform 0.2s ease;
-  }
-
-  .pdf-preview-dialog[open] {
-    animation: pdf-dialog-in 0.22s ease;
-  }
-}
-
-@keyframes pdf-dialog-in {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.pdf-dialog-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.85rem 1rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.pdf-dialog-header h3 {
-  margin: 0;
-  font-size: 0.95rem;
-}
-
-.pdf-dialog-close {
-  flex-shrink: 0;
-  padding: 0.35rem 0.55rem;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 1rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.pdf-dialog-close:hover {
-  color: var(--wave);
-  border-color: var(--wave);
-}
-
-.pdf-dialog-close:focus-visible {
-  outline: 2px solid var(--cyan);
-  outline-offset: 2px;
-}
-
-.pdf-dialog-iframe {
-  display: block;
-  width: 100%;
-  height: min(72vh, 640px);
-  border: 0;
-  background: #010502;
-}
-
-.pdf-dialog-full {
-  padding: 0.75rem 1rem 1rem;
-}
-
 /* Project cards */
 
 .projects {
@@ -392,19 +249,13 @@ a:focus-visible {
 }
 
 .project {
+  padding: 1rem;
   background: rgba(2, 8, 4, 0.93);
   border: 1px solid rgba(57, 255, 20, 0.28);
 
   box-shadow:
     inset 0 0 25px rgba(57, 255, 20, 0.025),
     0 0 12px rgba(57, 255, 20, 0.04);
-}
-
-.project-thumb {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid var(--border);
 }
 
 .project-heading {
