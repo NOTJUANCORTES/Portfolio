@@ -1,4 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="JC">
-  <rect width="32" height="32" fill="#020703"/>
-  <text x="16" y="22" text-anchor="middle" fill="#39ff14" font-family="Courier New, monospace" font-size="14" font-weight="bold">JC</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Juan Cortes">
+  <rect width="32" height="32" fill="#f7f9f8"/>
+  <path
+    d="M 3 16 H 12 L 18 16 H 29"
+    fill="none"
+    stroke="#1a2e28"
+    stroke-width="1.35"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M 12 16 L 14 10 L 16 22 L 18 16"
+    fill="none"
+    stroke="#b91c1c"
+    stroke-width="1.35"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <circle cx="14" cy="10" r="1.65" fill="#0f766e"/>
 </svg>

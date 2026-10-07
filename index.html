@@ -20,16 +20,41 @@
     content="https://notjuancortes.github.io/Portfolio/assets/portraits/juan.jpg"
   >
 
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon.svg?v=1" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg?v=1">
   <title>Juan Cortes</title>
 
-  <link rel="stylesheet" href="styles.css?v=10">
-  <script src="script.js?v=8" defer></script>
+  <link rel="stylesheet" href="styles.css?v=16">
+  <script src="script.js?v=10" defer></script>
 </head>
 
 <body>
-  <!-- Animated background -->
-  <canvas id="wave-background"></canvas>
+  <div class="ekg-backdrop" aria-hidden="true">
+    <svg
+      class="ekg-svg"
+      viewBox="0 0 1200 120"
+      preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        class="ekg-trace-base"
+        d="M0 60 L80 60 L100 60 L115 45 L130 75 L145 30 L160 90 L175 60 L220 60 L240 60 L255 48 L270 72 L285 38 L300 82 L315 60 L400 60 L420 60 L435 52 L450 68 L465 42 L480 78 L495 60 L600 60 L620 60 L635 46 L650 74 L665 34 L680 86 L695 60 L800 60 L820 60 L835 54 L850 66 L865 44 L880 76 L895 60 L1000 60 L1020 60 L1035 47 L1050 73 L1065 36 L1080 84 L1095 60 L1200 60"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        vector-effect="non-scaling-stroke"
+      />
+      <path
+        class="ekg-trace-sweep"
+        pathLength="1"
+        d="M0 60 L80 60 L100 60 L115 45 L130 75 L145 30 L160 90 L175 60 L220 60 L240 60 L255 48 L270 72 L285 38 L300 82 L315 60 L400 60 L420 60 L435 52 L450 68 L465 42 L480 78 L495 60 L600 60 L620 60 L635 46 L650 74 L665 34 L680 86 L695 60 L800 60 L820 60 L835 54 L850 66 L865 44 L880 76 L895 60 L1000 60 L1020 60 L1035 47 L1050 73 L1065 36 L1080 84 L1095 60 L1200 60"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        vector-effect="non-scaling-stroke"
+      />
+    </svg>
+  </div>
 
   <!-- Navbar -->
   <header class="site-header">
@@ -39,7 +64,15 @@
         href="#projects"
         aria-label="Juan Cortes home"
       >
-        JUAN CORTES<span aria-hidden="true">_</span>
+        <img
+          class="nav-brand-mark"
+          src="assets/icons/logo-mark.svg"
+          width="56"
+          height="28"
+          alt=""
+          decoding="async"
+        >
+        <span class="nav-brand-text">JUAN CORTES<span aria-hidden="true">_</span></span>
       </a>
 
       <div class="nav-links">
@@ -51,6 +84,7 @@
           Projects
         </a>
         <a href="#blog" data-page="blog">Blog</a>
+        <a href="#coursework" data-page="coursework">Coursework</a>
         <a href="#github" data-page="github">GitHub</a>
         <a href="#contact" data-page="contact">Contact</a>
       </div>
@@ -273,6 +307,198 @@
       <p>Coming soon. Check back for new posts.</p>
     </section>
 
+    <!-- Coursework -->
+    <section
+      id="coursework"
+      class="page-panel content-panel"
+      aria-labelledby="coursework-title"
+    >
+      <p class="section-label">COURSEWORK</p>
+      <h1 id="coursework-title">Education</h1>
+
+      <div class="education-credentials">
+        <p>
+          University of California, Los Angeles — Master of Applied Statistics
+          and Data Science (MASDS).
+        </p>
+        <p>
+          California State University, Chico — B.S. Mathematics (Statistics),
+          Data Science Certificate (2024, cum laude).
+        </p>
+      </div>
+
+      <h2 class="coursework-heading">
+        University of California, Los Angeles
+      </h2>
+
+      <h3 class="coursework-subheading">Core</h3>
+      <p class="coursework-note">
+        Required core per
+        <a
+          href="https://master.stat.ucla.edu/available-courses.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          UCLA MASDS curriculum
+        </a>.
+      </p>
+
+      <ul class="course-list">
+        <li>
+          <span class="course-list__title">
+            Statistics 400 — Introduction to Probability Models
+          </span>
+          <span>
+            Probability models and stochastic foundations for modern statistical
+            practice.
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            Statistics 401 — Survey of Methods in Modern Statistics
+          </span>
+          <span>
+            Core statistical methods spanning estimation, inference, and
+            contemporary analytic workflows.
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            Statistics 402 — Applied Regression
+          </span>
+          <span>
+            Linear and generalized linear models for prediction and explanation
+            in applied settings.
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            Statistics 403 — Mathematical Statistics
+          </span>
+          <span>
+            Theoretical foundations of estimation, testing, and asymptotic
+            behavior.
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            Statistics 404 — Statistical Computing and Programming
+          </span>
+          <span>
+            Computational tools and reproducible programming for data analysis.
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            Statistics 405 — Data Management
+          </span>
+          <span>
+            Principles of data wrangling, storage, and pipeline design for
+            analytics projects.
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            Statistics 421 — Advanced Statistical Communication
+          </span>
+          <span>
+            Clear reporting of methods, uncertainty, and results for diverse
+            audiences.
+          </span>
+          <span class="course-status">Upcoming</span>
+        </li>
+      </ul>
+
+      <h3 class="coursework-subheading">Electives</h3>
+      <ul class="course-list">
+        <li>
+          <span class="course-list__title">
+            Statistics 414 — From Predictive Artificial Intelligence to
+            Generative Artificial Intelligence
+          </span>
+          <span>
+            Machine-learning pipeline, classification, regularization,
+            clustering, PCA, and reinforcement learning.
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            Statistics 420 — Causal Inference in Social Science Practice
+          </span>
+          <span>
+            Design-based and observational methods for estimating causal effects
+            in applied research.
+          </span>
+        </li>
+      </ul>
+
+      <h2 class="coursework-heading">
+        California State University, Chico
+      </h2>
+      <p class="coursework-note">
+        Selected statistics, data science, computing, and field experience
+        (full transcript on file).
+      </p>
+
+      <h3 class="coursework-subheading">Statistics &amp; data science</h3>
+      <ul class="course-list course-list--compact">
+        <li>
+          <span class="course-list__title">MATH 315 — Statistical Methods I</span>
+        </li>
+        <li>
+          <span class="course-list__title">MATH 456 — Statistical Methods II</span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            MATH 350 / MATH 351 — Intro to Probability/Statistics
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">MATH 385 — Intro to Data Science</span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            MATH 485 — Advanced Topics in Data Science
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">MATH 490 — Data Science Capstone</span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            MATH 589 — Field Experience in Statistics &amp; Data Science
+          </span>
+        </li>
+      </ul>
+
+      <h3 class="coursework-subheading">Computer science</h3>
+      <ul class="course-list course-list--compact">
+        <li>
+          <span class="course-list__title">
+            CSCI 111 — Programming and Algorithms I
+          </span>
+        </li>
+        <li>
+          <span class="course-list__title">
+            CSCI 211 — Programming and Algorithms II
+          </span>
+        </li>
+      </ul>
+
+      <h3 class="coursework-subheading">Health &amp; applied analytics</h3>
+      <ul class="course-list course-list--compact">
+        <li>
+          <span class="course-list__title">
+            NFSC 489C — Community Health Center Externship
+          </span>
+          <span>
+            Applied outreach and assistance tracking in a campus health
+            setting (CalFresh Outreach).
+          </span>
+        </li>
+      </ul>
+    </section>
+
     <!-- GitHub -->
     <section
       id="github"
@@ -342,12 +568,16 @@
       </p>
 
       <div class="contact-actions">
-        <a href="#" class="action-link js-email" data-email-format="contact">
+        <a
+          href="#"
+          class="action-link contact-actions__email js-email"
+          data-email-format="contact"
+        >
           Email me →
         </a>
 
         <a
-          class="action-link"
+          class="action-link contact-actions__resume"
           href="assets/Cortes_Juan_Resume_2026.pdf"
           target="_blank"
           rel="noopener noreferrer"
