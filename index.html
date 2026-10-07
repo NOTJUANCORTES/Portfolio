@@ -23,8 +23,8 @@
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <title>Juan Cortes</title>
 
-  <link rel="stylesheet" href="styles.css?v=7">
-  <script src="script.js?v=7" defer></script>
+  <link rel="stylesheet" href="styles.css?v=10">
+  <script src="script.js?v=8" defer></script>
 </head>
 
 <body>
@@ -91,8 +91,8 @@
             github: @NOTJUANCORTES
           </a>
 
-          <a href="mailto:juancortes.management@gmail.com">
-            email: juancortes.management@gmail.com
+          <a href="#" class="js-email" data-email-format="hero">
+            email: Contact me →
           </a>
 
           <a
@@ -105,7 +105,15 @@
         </div>
       </section>
 
-      <section class="featured" aria-labelledby="featured-title">
+      <section class="featured featured--clickable" aria-labelledby="featured-title">
+        <a
+          class="panel-hit"
+          href="https://github.com/NOTJUANCORTES/Marriage-and-Affairs"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View Marriage and Affairs project on GitHub"
+        ></a>
+
         <p class="section-label">LATEST PROJECT</p>
 
         <h2 id="featured-title">
@@ -120,7 +128,7 @@
         </p>
 
         <a
-          class="read-link"
+          class="read-link panel-interactive"
           href="https://github.com/NOTJUANCORTES/Marriage-and-Affairs/blob/main/final_portfolio/final/Lab_X.pdf"
           target="_blank"
           rel="noopener noreferrer"
@@ -128,7 +136,7 @@
           Open full report (PDF) →
         </a>
         <a
-          class="read-link read-link-secondary"
+          class="read-link read-link-secondary panel-interactive"
           href="https://github.com/NOTJUANCORTES/Marriage-and-Affairs"
           target="_blank"
           rel="noopener noreferrer"
@@ -138,8 +146,16 @@
       </section>
 
       <section class="projects">
-        <article class="project">
-          <div class="project-heading">
+        <article class="project project--clickable">
+          <a
+            class="panel-hit"
+            href="https://github.com/NOTJUANCORTES/Marriage-and-Affairs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Marriage and Affairs Prediction on GitHub"
+          ></a>
+
+          <div class="project-heading project-interactive">
             <h3>Marriage and Affairs Prediction</h3>
 
             <a
@@ -161,8 +177,16 @@
           </p>
         </article>
 
-        <article class="project">
-          <div class="project-heading project-heading-duo">
+        <article class="project project--clickable">
+          <a
+            class="panel-hit"
+            href="https://juancortes-connect.shinyapps.io/Capstone/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open CalFresh Outreach Dashboard live app"
+          ></a>
+
+          <div class="project-heading project-heading-duo project-interactive">
             <h3>CalFresh Outreach Dashboard</h3>
 
             <div class="project-heading-links">
@@ -192,8 +216,16 @@
           <p class="tools">R · Shiny · Data Visualization</p>
         </article>
 
-        <article class="project">
-          <div class="project-heading">
+        <article class="project project--clickable">
+          <a
+            class="panel-hit"
+            href="https://github.com/NOTJUANCORTES/Meteorite-Events-and-UFO-Reporting-Activity"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View UFO and Meteorite Analysis on GitHub"
+          ></a>
+
+          <div class="project-heading project-interactive">
             <h3>UFO × Meteorite Analysis</h3>
 
             <a
@@ -309,21 +341,20 @@
         or statistical research? Get in touch.
       </p>
 
-      <a
-        class="action-link"
-        href="mailto:juancortes.management@gmail.com"
-      >
-        juancortes.management@gmail.com →
-      </a>
+      <div class="contact-actions">
+        <a href="#" class="action-link js-email" data-email-format="contact">
+          Email me →
+        </a>
 
-      <a
-        class="action-link"
-        href="assets/Cortes_Juan_Resume_2026.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Resume (PDF) →
-      </a>
+        <a
+          class="action-link"
+          href="assets/Cortes_Juan_Resume_2026.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          resume: Download résumé (PDF) →
+        </a>
+      </div>
     </section>
   </main>
 </body>
