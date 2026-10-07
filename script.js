@@ -195,3 +195,37 @@ if (prefersReducedMotion) {
   context.fillRect(0, 0, width, height);
   animate();
 }
+
+// Featured PDF preview dialog (native <dialog>).
+
+const pdfDialog = document.querySelector("#pdf-preview-dialog");
+const pdfDialogOpeners = document.querySelectorAll("[data-pdf-dialog-open]");
+const pdfDialogClosers = document.querySelectorAll("[data-pdf-dialog-close]");
+
+function openPdfDialog() {
+  if (!pdfDialog) {
+    return;
+  }
+
+  pdfDialog.showModal();
+  const closeButton = pdfDialog.querySelector("[data-pdf-dialog-close]");
+  closeButton?.focus();
+}
+
+function closePdfDialog() {
+  pdfDialog?.close();
+}
+
+pdfDialogOpeners.forEach(button => {
+  button.addEventListener("click", openPdfDialog);
+});
+
+pdfDialogClosers.forEach(button => {
+  button.addEventListener("click", closePdfDialog);
+});
+
+pdfDialog?.addEventListener("click", event => {
+  if (event.target === pdfDialog) {
+    closePdfDialog();
+  }
+});
