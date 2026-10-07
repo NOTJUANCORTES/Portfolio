@@ -89,26 +89,12 @@ body {
 }
 
 .nav-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
   color: var(--text);
   font-family: var(--mono);
   font-size: 1.05rem;
   font-weight: bold;
   letter-spacing: 0.08em;
   white-space: nowrap;
-}
-
-.nav-brand-mark {
-  display: block;
-  flex-shrink: 0;
-  width: auto;
-  height: 26px;
-}
-
-.nav-brand-text span {
-  color: var(--accent);
 }
 
 .nav-brand:hover {
@@ -172,11 +158,21 @@ main {
   text-align: center;
 }
 
-.hero h1 {
-  margin: 0 0 1rem;
-  font-size: clamp(1.35rem, 3vw, 1.75rem);
+.hero-name {
+  margin: 0 0 0.35rem;
+  font-size: clamp(2rem, 5vw, 2.75rem);
   font-weight: 600;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.hero-title {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  color: var(--muted);
 }
 
 .hero p {
